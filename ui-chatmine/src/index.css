@@ -21,6 +21,10 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow: hidden;
+  background-color: #000;
+}
 
 .text-gradient {
   background: linear-gradient(
@@ -152,25 +156,6 @@
   font-size: clamp(2rem,8vw,5rem);
 }
 
-@media (max-width: 767px) {
-  .text-fluid-base {
-    font-size: 2.5rem;
-  }
-}
-
-@media (max-width: 575px) {
-  .text-fluid-base {
-    font-size: 1.5rem;
-  }
-}
-
-
-@media (max-width: 349px) {
-  .text-fluid-base {
-    font-size: 1.2rem;
-  }
-}
-
 .text-center {
   text-align: center;
 }
@@ -183,22 +168,6 @@
   z-index: 10;
 }
 
-.gradient-text {
-  background: linear-gradient(45deg, yellow, orange);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  letter-spacing: 0;
-}
-
 h1 {
   background: linear-gradient(45deg, yellow, orange);
   -webkit-background-clip: text;
@@ -209,19 +178,147 @@ h1 {
 
 .container {
   width: 100%;
+  height: auto;
+  min-height: 100vh;
+}
+
+.flexStart {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.boxWidth {
+  max-width: 1440px;
+  width: 100%;
 }
 
 .gradient-text {
-  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  background: linear-gradient(45deg, yellow, orange);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  /* Asegúrate de ajustar el tamaño de fuente que deseas aquí */
-  font-size: 5rem; 
-  /* Cambia esto por el nombre de tu fuente preferida */
+  background-clip: text;
+  text-fill-color: transparent;
+  font-size: 5vw; /* Adjust this value as needed */
   font-family: Poppins, sans-serif; 
   text-align: center;
 }
 
-body {
-  overflow: hidden;
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 30vw; /* Adjust as needed */
+  }
+  .btn-access {
+    width: 35vw; /* Adjust as needed */
+    font-size: 1rem; /* Adjust as needed */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo {
+    width: 50vw; /* Adjust as needed */
+  }
+  .btn-access {
+    width: 50vw; /* Adjust as needed */
+    font-size: 0.8rem; /* Adjust as needed */
+  }
+}
+@media screen and (max-width: 349px) {
+  
+  .gradient-text {
+    font-size: 6vw; /* adjust as needed */
+  }
+
+  .btn-gradient {
+    margin-top: 20px;
+  }
+}
+
+#home .gradient-text {
+  background: linear-gradient(45deg, yellow, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-size: 5vw;
+  font-family: Poppins, sans-serif; 
+  text-align: center;
+}
+
+.text-shadow-glow {
+  text-shadow: 0 0 10px #5ce1e6, 0 0 20px #5ce1e6, 0 0 30px #5ce1e6, 0 0 40px #5ce1e6;
+}
+
+.paragraph {
+  font-family: 'Poppins';
+  font-weight: 400;
+  color: dimgray;
+  font-size: 18px;
+  line-height: 30.8px;
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.paddingX {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.paddingY {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.padding {
+  padding: 4px 6px;
+}
+
+.marginX {
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.marginY {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.sectionReverse {
+  display: flex;
+  flex-direction: column-reverse;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.sectionImgReverse {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-right: 0;
+  margin-top: 10px;
+  position: relative;
+  flex-grow: 1;
+}
+
+.sectionInfo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.bg-black {
+  background-color: #000000;
 }
