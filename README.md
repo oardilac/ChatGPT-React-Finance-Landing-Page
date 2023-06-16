@@ -12,7 +12,6 @@
     <img src="logo.png" alt="Logo" width="80" height="80">
   </a>
 <br />
-<div align="center">
     <h3 align="center">AI Empowered Investments Landing Page</h3>
 
    <p align="center">
@@ -61,9 +60,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<a href="https://chat-gpt-react-finance-landing-page.vercel.app/">
-  <img src="logo.png" alt="Product Name Screen Shot" width="200" />
-</a>
+[See a demo]("https://chat-gpt-react-finance-landing-page.vercel.app/")
 
 Welcome to your landing page for your side project! This project is a modern, visually appealing landing page built to attract and retain users. It's clean, responsive, and easy to customize. Here's why:
 
@@ -93,9 +90,9 @@ To set up a local copy of the project, follow these steps.
 
 You need npm installed on your machine to run this project.
 
-    ```sh
-    npm install npm@latest -g
-    ```
+```
+npm install npm@latest -g
+```
 ### Installation
 
 1. Clone the repo
