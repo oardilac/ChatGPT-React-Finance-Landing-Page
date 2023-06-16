@@ -60,7 +60,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[See a demo]("https://chat-gpt-react-finance-landing-page.vercel.app/")
+[See a demo](https://chat-gpt-react-finance-landing-page.vercel.app/)
 
 Welcome to your landing page for your side project! This project is a modern, visually appealing landing page built to attract and retain users. It's clean, responsive, and easy to customize. Here's why:
 
