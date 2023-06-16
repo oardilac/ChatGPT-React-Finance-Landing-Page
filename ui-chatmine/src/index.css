@@ -152,6 +152,25 @@
   font-size: clamp(2rem,8vw,5rem);
 }
 
+@media (max-width: 767px) {
+  .text-fluid-base {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .text-fluid-base {
+    font-size: 1.5rem;
+  }
+}
+
+
+@media (max-width: 349px) {
+  .text-fluid-base {
+    font-size: 1.2rem;
+  }
+}
+
 .text-center {
   text-align: center;
 }
